@@ -1,17 +1,27 @@
+import Destination from "../components/Destination";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar"
-import HomeImg from "../assets/12.jpg"
+import Navbar from "../components/Navbar";
+import Trip from "../components/Trip";
 
 function Home() {
-    return(
-        <>
-        <Navbar/>
-        <Hero
+  return (
+    <>
+      <Navbar />
+      <Hero
         cName="hero"
-        heroImg={HomeImg}
-        />
-        </>
-    )
+        heroImg="/images/12.jpg"
+        title="Your Journey Your Story"
+        text="Choose Your Favorite Destination."
+        buttonText="Travel Plan"
+        url="/"
+        btnClass="show"
+      />
+      <Destination/>
+    <Trip/>
+    <Footer/>
+    </>
+  );
 }
 
 export default Home;
